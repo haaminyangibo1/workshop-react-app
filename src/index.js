@@ -2,12 +2,21 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Header from './Header';
+import Car from './Car';
+import SingleCar from './SingleCar';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+//Very similar to what you were doing with ReactDOM.render!
+
 root.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    <App name="haami" job='software engineer' colour='purple'/>
+    <Car/>
+    <SingleCar/>
+    <App name ='steve' job='apple' colour='blue'/>
   </React.StrictMode>
 );
 
